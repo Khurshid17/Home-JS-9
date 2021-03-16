@@ -102,9 +102,10 @@ function plusOrMinus(element) {
     sum.innerHTML = product[parentId].Summ;
     const kcall = parent.querySelector('.main__product-kcall span');
     kcall.innerHTML = product[parentId].Kcall;
-    console.log(product[parentId].amount);
 }
 
+// чекбоксы ингредиентов
+const checkBox = document.querySelectorAll('.');
 function stepByStep() {
     let num = document.querySelector('.header__timer-extra');
     num.innerHTML++ 
