@@ -97,7 +97,11 @@ function plusOrMinus(element) {
     }
     
     const num = parent.querySelector('.main__product-num');
-    num.innerHTML = ;
+    num.innerHTML = product[parentId].amount;
+    const sum = parent.querySelector('.main__product-price span')
+    sum.innerHTML = product[parentId].Summ;
+    const kcall = parent.querySelector('.main__product-kcall span');
+    kcall.innerHTML = product[parentId].Kcall;
     console.log(product[parentId].amount);
 }
 
