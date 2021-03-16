@@ -105,7 +105,18 @@ function plusOrMinus(element) {
 }
 
 // чекбоксы ингредиентов
-const checkBox = document.querySelectorAll('.');
+const checkBox = document.querySelectorAll('.main__product-checkbox');
+for (let i = 0; i < checkBox.length; i++) {
+    const element = checkBox[i];
+    element.addEventListener("click", function () {
+        addExtraProduct(this);
+    })
+}
+
+function addExtraProduct(element) {
+    const parent = element.closest(".main__product")
+    console.log(element);
+}
 function stepByStep() {
     let num = document.querySelector('.header__timer-extra');
     num.innerHTML++ 
