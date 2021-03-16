@@ -95,6 +95,9 @@ function plusOrMinus(element) {
     } else if (symbol == "-" && product[parentId].amount > 0) {
         product[parentId].amount--
     }
+    
+    const num = parent.querySelector('.main__product-num');
+    num.innerHTML = ;
     console.log(product[parentId].amount);
 }
 
