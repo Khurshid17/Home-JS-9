@@ -96,10 +96,6 @@ function plusOrMinus(element) {
         product[parentId].amount--
     }
     console.log(product[parentId].amount);
-    let num = num++
-    setTimeout(() => {
-        plusOrMinus()
-    }, 100);
 }
 
 function stepByStep() {
